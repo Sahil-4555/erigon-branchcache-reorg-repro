@@ -1,5 +1,7 @@
 # Erigon BranchCache reorg repro
 
+Erigon issue: https://github.com/erigontech/erigon/issues/24711
+
 Reproduces an Erigon `main` bug where, after an unwind, the commitment trie warmup caches branches of the unwound fork in `BranchCache`, and a valid block is rejected with `wrong trie root`.
 
 ```
